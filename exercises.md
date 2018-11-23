@@ -99,17 +99,17 @@ Explain what you created and publish it to Docker Hub.
 
 ## Part 2
 
-*Do not alter the code of the projects*
+*Do not alter the code of the projects, do all exercises in part 2 using docker-compose*
 
 **2.1**
 
-Configuring 1.4 to 1.5 in docker-compose.
+Configure exercises 1.4 and 1.5 in docker-compose.
 
 Since we already created working Dockerfiles for both frontend and backend we can go step further and simplify the usage into one docker-compose.yml.
 
 **2.2**
 
-Adding redis to example frontend + backend. 
+Add redis to example frontend + backend. 
 
 Redis is used to speed up some operations. Backend uses a slow api to get information. You can test the slow api by connecting to /slow. It should take 10 to 20 seconds to get a response.
 
@@ -119,7 +119,7 @@ Configure a redis container to cache information for the backend. Use the docume
 
 **2.3**
 
-Adding database to example frontend + backend.
+Add database to example frontend + backend using.
 
 Lets use a postgres database to save messages. We won't need to configure a volume since the official postgres image sets a default volume for us. Lets use the postgres image documentation to our advantage when configuring: <https://hub.docker.com/_/postgres/>. Especially part Environment Variables is of interest.
 
@@ -132,7 +132,7 @@ The backend README should have all the information needed to connect.
 
 **2.4**
 
-Configuring a machine learning project.
+Configure a machine learning project.
 
 Look into machine learning project created with Python and React and split into three parts: [frontend](https://github.com/docker-hy/ml-kurkkumopo-frontend), [backend](https://github.com/docker-hy/ml-kurkkumopo-backend) and [training](https://github.com/docker-hy/ml-kurkkumopo-training) 
 
@@ -144,7 +144,7 @@ Exercise 2.4 was created by [Sasu Mäkinen](https://github.com/sasumaki)
 
 **2.5**
 
-Adding nginx to example frontend + backend
+Add nginx to example frontend + backend
 
 ![]({{ "/images/exercises/back-front-redis-database-and-nginx.png" | absolute_url }})
 
